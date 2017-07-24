@@ -26,22 +26,31 @@ font-family: 'Lora', serif;
   margin:0px;
 }
 .main-navigation {
+  font-family: 'Roboto';
   background:white;
   text-decoration:none;
-  padding-bottom:25px;
   display:flex;
+  align-items: center;
+  padding:10px 0px;
 }
 .wrapper h1,h2,h3 {
   font-family: 'Roboto', sans-serif
 }
 .navigation {
-  align-self: center;
-  flex-flow: wrap;
+  display:flex;
+  justify-content: center;
+  /*float:right;*/
+  width:100%;
+}
+#logo {
+  position: absolute;
+  left:0px;
 
 }
 .navigation a {
   color:#2B2F26;
   text-transform: uppercase;
+  padding:10px;
 }
 .site-header {
   padding:40px;
@@ -68,11 +77,71 @@ footer {
   color:#F2F1E8;
   padding: 20px;
 }
-.ceramics-section a {
-  background-color:#2B2F26;
+.ceramics-section {
+  display: flex;
+  flex-direction:column;
+  width:100%;
+  justify-content: space-between;
+  margin:0px 5px;
+}
+.ceramics-section div {
   color:#F2F1E8;
+  margin:10px;
+  margin-left:5px;
+}
+
+.top-images {
+  display:flex;
+}
+.top-images div, .bottom-images div {
+  height:50vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items:flex-start;
+  padding-bottom: 5px;
+  margin:5px;
+  background-position: center;
+  background-size: cover;
+}
+
+.bottom-images {
+  display:flex;
+}
+.top-images span, .bottom-images span {
+  background-color:#2B2F26;
+  padding:5px;
+  /*padding-bottom:5px;*/
 
 }
 #Endless-Possibilities {
   background-image: url("images/product-1.jpg");
+  background-size: cover;
+  width:60%;
+}
+#Sets {
+  width: 20%;
+  background-image: url("images/product-2.jpg");
+
+}
+
+#Texture {
+  width:20%;
+  background-image:url("images/product-3.jpg");
+}
+#Tea-Time {
+  width: 20%;
+  background-image: url("images/product-4.jpg");
+}
+#Jars-Containers {
+  width:20%;
+  background-image: url("images/product-5.jpg");
+}
+#Wasabi {
+  width: 40%;
+  background-image:url("images/product-6.jpg");
+}
+#Sippin {
+  width:20%;
+  background-image: url("images/product-7.jpg");
 }
