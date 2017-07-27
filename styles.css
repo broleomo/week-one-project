@@ -14,134 +14,229 @@ Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343*/
 
 body {
-font-family: 'Roboto', sans-serif;
-font-family: 'Lora', serif;
-  display:flex;
-  flex-direction:column;
-  width:auto 0px;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Lora', serif;
+  display: flex;
+  flex-direction: column;
+  width: auto 0px;
   background: #F2F1E8;
-  margin:auto;
+  margin: auto;
 }
+
 .wrapper {
-  margin:0px;
+  margin: 0px;
+  margin-left:20px;
+  margin-right:20px;
 }
+
 .main-navigation {
   font-family: 'Roboto';
-  background:white;
-  text-decoration:none;
-  display:flex;
+  background: white;
+  text-decoration: none;
+  display: flex;
   align-items: center;
-  padding:10px 0px;
+  padding: 10px 0px;
 }
-.wrapper h1,h2,h3 {
+
+.wrapper h1, h2, h3 {
   font-family: 'Roboto', sans-serif
 }
+
 .navigation {
-  display:flex;
+  display: flex;
   justify-content: center;
-  /*float:right;*/
-  width:100%;
+  width: 100%;
 }
+
 #logo {
   position: absolute;
-  left:0px;
+  left: 0px;
+}
 
-}
 .navigation a {
-  color:#2B2F26;
+  color: #2B2F26;
   text-transform: uppercase;
-  padding:10px;
+  padding: 10px;
 }
+
 .site-header {
-  padding:40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'Lora', serif;
 }
+
 .site-header h1 {
-justify-content: center;
-font-family:'Lora', serif;
-margin:0px;
-font-size:50px;
-font-weight:400;
+  justify-content: center;
+  font-family: 'Lora', serif;
+  margin: 0px;
+  font-size: 50px;
+  font-weight: 400;
+}
+h3 {
+  font-family:'Lora',serif;
+  font-weight: 300;
 }
 .site-header h2 {
-  margin:1px;
-  font-family:'Lora', serif;
-  font-weight:100;
-  font-size:25px;
+  margin: 1px;
+  font-family: 'Lora', serif;
+  font-weight: 100;
+  font-size: 25px;
 }
+
 footer {
-  background:#2B2F26;
-  color:#F2F1E8;
+  background: #2B2F26;
+  color: #F2F1E8;
   padding: 20px;
 }
+
 .ceramics-section {
   display: flex;
-  flex-direction:column;
-  width:100%;
+  flex-direction: column;
+  width: 100%;
   justify-content: space-between;
-  margin:0px 5px;
+  margin: 0px 5px;
 }
+
 .ceramics-section div {
-  color:#F2F1E8;
-  margin:10px;
-  margin-left:5px;
+  color: #F2F1E8;
+  margin: 10px;
+  margin-left: 5px;
 }
 
 .top-images {
-  display:flex;
+  display: flex;
 }
+
 .top-images div, .bottom-images div {
-  height:50vh;
-  display:flex;
+  height: 50vh;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items:flex-start;
+  align-items: flex-start;
   padding-bottom: 5px;
-  margin:5px;
+  margin: 5px;
   background-position: center;
   background-size: cover;
 }
 
 .bottom-images {
-  display:flex;
+  display: flex;
+  padding-top: 0;
 }
-.top-images span, .bottom-images span {
-  background-color:#2B2F26;
-  padding:5px;
-  /*padding-bottom:5px;*/
 
+.top-images span, .bottom-images span {
+  background-color: #2B2F26;
+  padding: 10px;
 }
+
 #Endless-Possibilities {
   background-image: url("images/product-1.jpg");
   background-size: cover;
-  width:60%;
+  width: 60%;
 }
+
 #Sets {
   width: 20%;
   background-image: url("images/product-2.jpg");
-
 }
 
 #Texture {
-  width:20%;
-  background-image:url("images/product-3.jpg");
+  width: 20%;
+  background-image: url("images/product-3.jpg");
 }
+
 #Tea-Time {
   width: 20%;
   background-image: url("images/product-4.jpg");
 }
+
 #Jars-Containers {
-  width:20%;
+  width: 20%;
   background-image: url("images/product-5.jpg");
 }
+
 #Wasabi {
   width: 40%;
-  background-image:url("images/product-6.jpg");
+  background-image: url("images/product-6.jpg");
 }
+
 #Sippin {
-  width:20%;
+  width: 20%;
   background-image: url("images/product-7.jpg");
+}
+
+/*About Page stlying*/
+.wrapper-about {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+.content-section {
+  line-height: 30px;
+  width: 60%;
+  flex-wrap: wrap;
+  overflow:auto;
+  align-items: center;
+}
+.content-section img {
+  float:left;
+  padding-right:15px;
+
+}
+blockquote {
+  font-style: italic;
+  font-weight: 100;
+  border-left: 2px solid #967343;
+  padding-left:20px;
+}
+.Room-to-Grow {
+  color:white;
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  font-weight: 100;
+  background-image: url("images/background-3.jpg");
+  background-position: 40% 30%;
+  background-size: cover;
+  height:50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Room-to-Grow h1 {
+  font-family: 'Lora', serif;
+  font-size: 50px;
+  font-weight: 400;
+  align-items: center;
+}
+.bottom-section {
+  line-height: 30px;
+  border: solid black 3px;
+  justify-content: center;
+  display:flex;
+  align-items: center;
+}
+.aside {
+  border: solid black 3px;
+  height:auto;
+  font-size: 12px;
+  line-height: 20px;
+  float:right;
+  display:inline-block;
+  flex:1;
+
+}
+.aside figcaption {
+  width: 150px;
+}
+.facilities {
+  display: inline;
+  flex:3;
+  width:60%;
+}
+.facilities p {
+  justify-content: center;
 }
