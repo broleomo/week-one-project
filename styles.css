@@ -37,6 +37,12 @@ body {
   align-items: center;
   padding: 10px 0px;
 }
+.main-navigation a:hover {
+  color:#CD5D67
+}
+main-navigation a:active {
+  color: #968772;
+}
 
 .wrapper h1, h2, h3 {
   font-family: 'Roboto', sans-serif
@@ -74,9 +80,10 @@ body {
   font-size: 50px;
   font-weight: 400;
 }
-h3 {
-  font-family:'Lora',serif;
-  font-weight: 300;
+h2 {
+  font-family: 'Lora', serif;
+  font-weight: 100;
+  font-size: 25px;
 }
 .site-header h2 {
   margin: 1px;
@@ -101,12 +108,12 @@ footer {
 
 .ceramics-section div {
   color: #F2F1E8;
-  margin: 10px;
-  margin-left: 5px;
+  margin-right: 10px;
 }
 
 .top-images {
   display: flex;
+  margin-bottom:0px;
 }
 
 .top-images div, .bottom-images div {
@@ -214,20 +221,18 @@ blockquote {
 }
 .bottom-section {
   line-height: 30px;
-  border: solid black 3px;
   justify-content: center;
   display:flex;
   align-items: center;
+  align-self: center;
+  width: 60%;
 }
 .aside {
-  border: solid black 3px;
   height:auto;
   font-size: 12px;
   line-height: 20px;
   float:right;
-  display:inline-block;
-  flex:1;
-
+  padding-left: 50px;
 }
 .aside figcaption {
   width: 150px;
@@ -239,4 +244,86 @@ blockquote {
 }
 .facilities p {
   justify-content: center;
+}
+
+.table-colors {
+  background: #EAE8D5;
+}
+
+thead {
+text-align: center;
+}
+table {
+  border-collapse: collapse;
+}
+table td {
+border: 1px solid black;
+padding:10px;
+font-size: 16px;
+}
+
+.monthly-plans {
+  display:flex;
+  flex-direction: column;
+  align-self: center;
+  margin-bottom: 40px;
+  width:60%;
+}
+
+.monthly-plans h2 {
+  font-family: 'Lora', serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+/*Newsletter styling*/
+.form-section {
+  background-image: url("images/background-2.jpg");
+  width:auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:90vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.form-section h2{
+  font-family: 'Lora', serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+.form-section h4{
+  font-family:'Lora', serif;
+  font-weight: 100;
+  align-self:center;
+}
+.form-content {
+  background-color: white;
+  width:50%;
+  padding:20px;
+}
+.form-intro {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+input {
+  width:100%;
+    border: none;
+    border-bottom: 2px solid #968772;
+}
+button {
+  margin:0 45%;
+  color:white;
+  background-color:#968772;
+  padding:10px 20px;
+  border-style: none;
+  font-size:16px;
+  font-weight:lighter;
+}
+label {
+  font-family: 'Roboto', sans-serif;
+  color: #968772;
+  font-weight: 100;
 }
